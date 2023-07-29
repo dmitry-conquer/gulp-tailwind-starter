@@ -22,7 +22,7 @@ export function initHeader() {
     // click deligation
     document.addEventListener("click", e => {
       // open / close menu
-      if (window.innerWidth < burgerAppearenceWidth) {
+      if (window.innerWidth <= burgerAppearenceWidth) {
         if (e.target.classList.contains("_menu-icon") || e.target.closest("._menu-link")) {
           toggleMenu();
         }
